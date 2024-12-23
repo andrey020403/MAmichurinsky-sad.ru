@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мичуринский сад</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+
+    /* Фон для всей страницы */
+    body {
+      background: url('../images/PICTURE.webp') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Aial, sans-serif;
+      color: #333;
+    }
+
+    /* Стили для хедера */
+    .header {
+      background-color: #4CAF50; /* Светло-зеленый фон */
+      color: white; /* Белый цвет текста */
+      text-align: center; /* Выравнивание по центру */
+      padding: 40px 20px;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .site-title {
+      font-size: 36px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .tagline {
+      font-size: 18px;
+      font-style: italic;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    .nav-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .nav-list li {
+      display: inline;
+    }
+
+
+    .header {
+  height: 130px; /* Фиксированная высота */
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 12px; /* Обнуление отступов, если нужно */
+}
+
+    .nav-list a:hover {
+      color: #16a085; /* Темный зеленый цвет при наведении */
+    }
+  #about p {
+  text-indent: 30px; /* Красная строка */
+  text-align: justify; /* Выравнивание текста по бокам */
+  font-size: 18px; /* Размер шрифта */
+  line-height: 1.8; /* Межстрочный интервал для удобства чтения */
+  color: #333; /* Цвет текста */
+  margin-bottom: 20px; /* Отступ между абзацами */
+}
+ /* Для лучшей читаемости текста */
+ .content-section, #about,#gallery, #contact {
+      background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон */
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px auto;
+      max-width: 1200px;
+ }
+  </style>
+</head>
+<body style="background: url('images/shutterstock609086588jpg.jpg') no-repeat center center fixed; background-size: cover;">
+  <!-- Хедер -->
+  <header class="header">
+    <div class="container">
+      <h1 class="site-title">Садовый центр
+      </p>
+        «Мичуринский Сад»</h1>
+      <p class="tagline">Создаем природу вокруг вас</p>
+      <nav>
+    </div>
+  </header>
+
+  <!-- Навигационное меню с якорями -->
+  <nav>
+    <ul>
+      <li><a href="#" onclick="showSection('about')">О нас</a></li>
+      <li><a href="#" onclick="showSection('gallery')">Галерея</a></li>
+      <li><a href="#" onclick="showSection('contact')">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <!-- Секция "О нас" -->
+  <section id="about" class="content-section">
+    <div class="container">
+      <h2>О нас</h2>
+      <p>Мичуринский сад - это место, где природа оживает в каждом растении. Садовый центр «Мичуринский сад» славится разнообразием растений, включающим как собственные сорта, так и уникальные экземпляры, привезенные от зарубежных партнеров. Благодаря сотрудничеству с ботаническими садами и питомниками Европы, Азии и Америки, центр регулярно обновляет ассортимент и внедряет современные технологии ухода.
+        <p>
+        Коллекция центра включает декоративные и плодовые растения, адаптированные к российскому климату. Все экземпляры проходят строгий контроль качества, что гарантирует их устойчивость, декоративность и простоту в уходе. Центр активно делится опытом, проводя мастер-классы и выставки для садоводов и дизайнеров. Мы стремимся вдохновлять людей на создание красивых садов, объединяя науку, природу и творчество.</p>
+       </p>
+      <div class="about-grid">
+        <div class="about-item">
+          <h3>Наша миссия</h3>
+          <p>Создавать красоту в каждом уголке вашего сада и вдохновлять людей на любовь к природе.</p>
+        </div>
+        <div class="about-item">
+          <h3>Наши услуги</h3>
+          <ul>
+            <li>Продажа растений и семян</li>
+            <li>Консультации по садоводству</li>
+            <li>Ландшафтное проектирование</li>
+            <li>Услуги по уходу за садом</li>
+          </ul>
+        </div>
+        <div class="about-item">
+          <h3>Почему выбирают нас?</h3>
+          <ul>
+            <li>Широкий выбор растений высшего качества</li>
+            <li>Профессиональная команда экспертов</li>
+            <li>Индивидуальный подход к каждому клиенту</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="testimonials">
+        <h3>Отзывы наших клиентов</h3>
+        <div class="testimonial">
+          <p>«Спасибо за прекрасные растения! Все мои розы прижились и радуют своим цветением. Отличный сервис!»</p>
+          <cite>- Салищева Руслана, Тульская обл.</cite>
+        </div>
+        <div class="testimonial">
+          <p>«Заказал услуги по ландшафтному дизайну, и мой сад преобразился. Очень доволен результатом!»</p>
+          <cite>- Винайлев Максим, республика Крым</cite>
+        </div>
+        <div class="testimonial">
+          <p>«Потрясающие растения! Морозоустойчивы в нашей полосе. Я поражена. спасибо!»</p>
+          <cite>- Ястребова Полина, г. Москва</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Секция "Галерея" -->
+<section id="gallery" class="content-section">
+  <div class="container">
+    <h2>Галерея</h2>
+
+    <!-- Поисковик -->
+    <div class="search-container">
+      <div class="search">
+        <input type="text" id="searchInput" placeholder="Поиск растений...">
+        <button id="searchBtn">Найти</button>
+      </div>
+    </div>
+
+    <!-- Галерея растений -->
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- Пример элемента галереи -->
+      <div class="gallery-item">
+        <img src="path/to/your-image1.jpg" alt="Роза красная">
+        <p>Растение 1</p>
+      </div>
+      <div class="gallery-item">
+        <img src="path/to/your-image2.jpg" alt="Тюльпан красный">
+        <p>Растение 2</p>
+      </div>
+      <div class="gallery-item">
+        <img src='images/shutterstock609086588jpg.jpg' alt="Роза белая">
+        <p>Растение 3</p>
+      </div>
+      <div class="gallery-item">
+        <img src="path/to/your-image3.jpg" alt="Пион белый">
+        <p>Растение 4</p>
+      </div>
+      <div class="gallery-item">
+        <img src="path/to/пионРозовый.jpg" alt="Пион розовый">
+        <p>Растение 5</p>
+      </div>
+      <!-- Добавьте больше элементов .gallery-item с изображениями по мере необходимости -->
+    </div>
+
+    <!-- История создания сада -->
+    <div class="history-section">
+      <h3>История создания центра</h3>
+        <p>
+       Центр «Мичуринский сад» был основан в 2005 году выдающимся ученым-селекционером и генетиком Макаровым Андреем Николаевичем. С самого начала своей деятельности центр стремился стать лидером в области селекции и популяризации декоративных и плодовых растений. Основной идеей создания центра было объединение науки, практики и творчества для того, чтобы каждый желающий мог прикоснуться к миру уникальной флоры.
+        <p>
+        Одной из ключевых особенностей центра стало выведение собственных сортов растений, которые сочетают в себе устойчивость к климатическим условиям России и эстетическую привлекательность. Помимо этого, благодаря сотрудничеству с международными партнерами, «Мичуринский сад» получил доступ к редким и экзотическим видам растений, которые были адаптированы для российских условий. Многие из этих видов ранее были недоступны на отечественном рынке, но усилиями центра стали настоящими украшениями частных садов и общественных парков.
+        <p>
+       Центр не ограничивается только коммерческой деятельностью. Здесь регулярно проводятся образовательные мероприятия: мастер-классы, семинары и открытые лекции. Эти инициативы направлены на популяризацию садоводства и развитие экологического сознания среди населения. Кроме того, центр активно взаимодействует с научными учреждениями, что позволяет внедрять передовые технологии и подходы в селекцию растений.
+        <p>
+        Сегодня центр «Мичуринский сад» продолжает развиваться, оставаясь верным своим принципам. За годы своей работы он стал местом притяжения для садоводов, ботаников и просто любителей природы. Мы гордимся своей историей и стремимся вдохновлять людей на создание уникальной красоты вокруг себя, сохраняя связь с природой.
+        <p>
+      </div>
+    
+</section>
+<!-- Секция "Контакты" -->
+<section id="contact" class="content-section">
+  <div class="container">
+    <h2>Связаться с нами</h2>
+    
+    <div class="contact-form">
+      <form id="contactForm">
+        <label for="name">ФИО:</label>
+        <input type="text" id="name" name="name" class="contact-input" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" class="contact-input" required>
+        
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" class="contact-input" required></textarea>
+        
+        <button type="submit" class="contact-btn">Связаться с нами</button>
+      </form>
+    </div>
+    <div class="contact-info">
+      <h3>Контактная информация</h3>
+      <div class="info-item">
+        <i class="fas fa-phone-alt"></i>
+        <p><a href="tel:+71234567890">+7 (952) 015 95 68</a></p>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-clock"></i>
+        <p>Пн-Пт: 09:00 - 18:00</p>
+      </div>
+        <p>Сб-Вс: выходной</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 Мичуринский сад. Все права защищены.</p>
+      <p>ОГРН: 92384387593798374387</p>
+      <p>ИНН: 23943298490840938402</p>
+    </div>
+  </footer>
+    
+  <script src="js/script.js"></script>
+</body>
+</html>
