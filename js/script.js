@@ -4,7 +4,7 @@ function showSection(sectionId) {
   const sections = document.querySelectorAll('.content-section');
   sections.forEach(section => section.style.display = 'none');
 
-  // Показываем выбранную секцию
+  // отображение выбранной секции
   const activeSection = document.getElementById(sectionId);
   if (activeSection) {
     activeSection.style.display = 'block';
