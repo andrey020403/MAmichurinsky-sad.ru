@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Инициализация карты
   ymaps.ready(() => {
     const map = new ymaps.Map('map', {
-      center: [55.7558, 37.6173], // Координаты центра карты (Москва)
+      center: [55.757997, 37.615901], // Координаты садового центра (Москва)
       zoom: 10, // Уровень масштабирования карты
     });
 
