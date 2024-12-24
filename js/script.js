@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Добавление метки
     const placemark = new ymaps.Placemark(
-      [55.7558, 37.6173], // Координаты метки
+      [55.757997, 37.615901], // Координаты метки
       {
         hintContent: 'Мичуринский сад',
         balloonContent: 'Добро пожаловать в наш садовый центр!',
